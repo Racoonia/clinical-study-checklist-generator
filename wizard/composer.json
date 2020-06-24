@@ -1,0 +1,7 @@
+{
+    "require": {
+       "phpoffice/phpword": "v0.14.*",
+       "dompdf/dompdf": "dev-master",
+       "endroid/qr-code": "^3.2"
+    }
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+ <html lang="de">
+ <head>
+
+ <title></title>
+ <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="stylesheet" type="text/css" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/base/jquery-ui.css">
+ <link rel="stylesheet" type="text/css" href="../header_menu/styleHeaderMenu.css">
+ <link rel="stylesheet" type="text/css" href="styleAccount.css">
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+ <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script> 
+ <script language="javascript" type="text/javascript" src="../header_menu/setHeaderMenu.js"></script>
+ <script language="javascript" type="text/javascript" src="account.js"></script>
+
+ </head>
+ <body>
+ 	<div id="header"></div>
+    <div id="menu"></div>
+
+	 <div class="content">
+	 	<form id="formAccount" class="table" action="">
+	 		<div class="tablerow">
+	 			<div class="table-cell"> Nutzername: </div>
+   				<div class="table-cell"> <span id="username"></span> </div>
+	 		</div>
+
+	 		<div class="tablerow">
+	 			<div class="table-cell"> Rechte: </div>
+   				<div class="table-cell"> <span id="role"></span> </div>
+	 		</div>
+
+	 		<div class="tablerow">
+	 			<div class="table-cell"> E-Mail-Adresse: </div>
+   				<div class="table-cell"> <input type="email" id="email" name="email" required> </div>
+	 		</div>
+	 		
+			<div class="tablerow">
+	 			<div class="table-cell"> neues Passwort: </div>
+   				<div class="table-cell"> <input type="password" id="password" name="password"> </div>
+	 		</div>
+
+	 		<div class="tablerow">
+	 			<div class="table-cell"> neues Passwort wiederholen:  </div>
+   				<div class="table-cell"> <input type="password" id="passwordRepeat" name="password"> </div>
+	 		</div>
+	 		<div class="centered"> <button type="button" id="deleteAccount"> Konto löschen </button> </div>
+	 		<button type="submit" id="submitAccount"> Speichern </button>
+	 		
+		</form> 
+	</div>
+ 
+ </body>
+ </html>

@@ -1,0 +1,135 @@
+
+ .container {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; 
+}
+
+#exportSessionForm {
+  text-align: right;
+}
+
+#buttonSessionCancel {
+  display: block;
+  margin: 1em auto;
+}
+
+#wizard {
+  width: 60%;
+  padding: 1em; 
+  margin: 1em;
+  border: 1px grey solid;
+  background: rgb(242, 238, 238, 0.4);
+}
+
+#wizardHistory {
+  width: 40%;
+  height: 20em;
+  padding: 1em; 
+  margin: 1em;
+  border: 1px grey solid;
+  overflow-y: scroll;
+  background: rgb(242, 238, 238, 0.4);
+}
+
+h3 {
+    margin-top: 0;
+}
+
+hr {
+  margin: 0;
+}
+
+#wizard_question {
+  padding-top: 0em; 
+  padding-bottom: 1em; 
+}
+
+#wizard_question_header {
+  position: relative; 
+}
+
+#wizard_question_header img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 2em;
+  width: 2em;
+}
+
+#wizard_answers {
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+input[type="radio"] {
+  /* margin: 20px 0px 20px 0px; */
+   margin-bottom: 1em; 
+}
+
+input[type="checkbox"] {
+  /* margin: 20px 0px 20px 0px; */
+   margin-bottom: 1em; 
+}
+
+.buttons {
+ /* margin: 1em; */
+  display: flex;
+  justify-content: center;
+}
+
+button {
+  margin: 1em 1em 0em 1em;
+}
+
+fieldset {
+    border: 0;
+}
+
+/* Tooltip text */
+.infotext_tooltip {
+    visibility: hidden;
+    width: 120px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+
+    /* Position the tooltip text */
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 98%;
+    margin-left: -60px;
+
+    /* Fade in tooltip */
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+/* Tooltip arrow */
+.infotext_tooltip::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+#wizard_question_infotext:hover .infotext_tooltip {
+    visibility: visible;
+    opacity: 1;
+}
+
+.hidden-source{
+  display: none;
+}
+
+
+
+

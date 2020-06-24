@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+ <html lang="de">
+ <head>
+
+ <title>WizardEnd</title>
+ <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/base/jquery-ui.css">
+ <link rel="stylesheet" type="text/css" href="styleWizardEnd.css">
+ <link rel="stylesheet" type="text/css" href="../../header_menu/styleHeaderMenu.css">
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+ <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+ <script src="../../header_menu/setHeaderMenu.js"></script>
+ <script type="text/javascript" src="WizardControllerEnd.js"></script>
+ <script type="text/javascript" src="WizardViewEnd.js"></script>
+ <script type="text/javascript" src="WizardMainEnd.js"></script>
+
+ </head>
+ 
+ 	<body>
+	 	<div id="header"></div>
+		<div id="menu"></div>
+
+		<div class="content">
+		 	<div id="buttonbar">
+		 	<div id="formDocx">
+		 		<form action="../serverSide/DownloadChecklistDocx.php" method="post" id="downloadDocxForm" enctype="multipart/form-data"> 
+		   			<button type="submit" id="buttonDownloadDocx">DOCX-Datei herunterladen</button>
+		   			<input id="inputElementsDocx" name="inputElementsDocx" class="hidden-source" type="text" value="">
+		 		</form>
+		 	</div>
+		 	<div id="formXML">
+		 		<form action="../serverSide/DownloadChecklistXML.php" method="post" id="downloadXMLForm" enctype="multipart/form-data"> 
+		 			<button type="submit" id="buttonDownloadXML">XML-Datei herunterladen</button>
+		   			<input id="inputElementsXML" name="inputElementsXML" class="hidden-source type="text" value="">
+		 		</form>
+		 		
+		 	</div>
+		 	</div>
+		 	
+		 	<table id=tableResult>
+		 		<th>Anforderung</th>
+		 		<th>resultierend aus</th>
+		 	</table>
+	 	</div>
+ 	</body>
+
+ </html>

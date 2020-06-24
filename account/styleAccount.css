@@ -1,0 +1,39 @@
+.content {
+
+}
+
+.table { 
+   display: table;
+   margin: 30px auto 10px auto;
+   padding: 10px;
+   border-collapse: collapse;
+   border: 1px solid grey;
+}
+
+.table input {
+	width: 350px;
+}
+
+.table-row {
+	display: table-row;
+}
+
+.table-cell {
+	display: table-cell;
+	padding: 10px;
+}
+
+.table-cell:nth-of-type(odd) {
+	width:220px;
+}
+
+.centered {
+	margin: 20px auto 10px auto;
+	text-align: center;
+}
+
+#submitAccount {
+	float: right;
+	margin: 0px 20px 10px auto;
+}
+

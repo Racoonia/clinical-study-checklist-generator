@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+ <html lang="de">
+ <head>
+
+ <title>Wizard</title>
+ <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/base/jquery-ui.css">
+ <link rel="stylesheet" type="text/css" href="../../header_menu/styleHeaderMenu.css">
+ <link rel="stylesheet" type="text/css" href="styleWizard.css">
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+ <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+ <script src="../../header_menu/setHeaderMenu.js"></script>
+ <script type="text/javascript" src="WizardController.js"></script>
+ <script type="text/javascript" src="WizardView.js"></script>
+ <script type="text/javascript" src="WizardModel.js"></script>
+ <script type="text/javascript" src="WizardMain.js"></script>
+
+ </head>
+ 
+ 	<body>
+ 		<div id="header"></div>
+		<div id="menu"></div>
+
+		<div class="content">
+	 		<div>
+	  			<form action="../serverSide/ExportSession.php" method="post" id="exportSessionForm" enctype="multipart/form-data"> 
+	   				<button type="submit" id="buttonExportSession">Sitzung exportieren</button>
+	   				<input id="inputExportSession" name="inputExportSession" class="hidden-source" type="text" value="">
+	 			</form>
+	  		</div>
+
+	  	<div class = "container">
+
+	 		<div id = "wizard">
+
+	 		
+	 			<div id = "wizard_question">
+	 				<div id="wizard_question_header">
+	 				<h3 id="divQuestionnumber"></h3>
+	 					<div id = "wizard_question_infotext">
+	 					<img id = "wizard_question_infotext" src="../../resources/questioncircle.png" alt="Info">
+	 					<span id = "infotext_tooltip" class="infotext_tooltip"></span>
+	 					</div>
+	 				</div>
+	 				<div id = "wizard_question_text">
+	 			
+	 				</div>
+	 			</div>
+
+	 		<hr>
+
+	 			<div>
+	 				<h3>Antwort:</h3>
+	 			<form id = "wizard_answers" class="form">
+				</form>
+	 			
+	 			</div>
+
+	 			<div id = "wizard_link">
+	 				<center>Weitere Informationen zu dieser Frage und ihren Antwortmöglichkeiten finden Sie in diesem <a href="" id="wikiUrl" target="_blank">Wiki-Eintrag</a>.</center>
+	 			
+	 			</div>
+	 			<hr>
+
+	 			<div class="buttons">
+	            	<button type="button" id="previousQuestion">vorherige Frage</button>
+					<button type="submit" id="nextQuestion">nächste Frage</button>
+					<button type="submit" id="finished">Fertig</button>
+				</div>
+
+	 		</div>
+
+	 		<div id="wizardHistory">
+	 			<h3>Frageverlauf:</h3>	
+	 		</div>
+			
+		</div>
+
+		<button id="buttonSessionCancel">Abbrechen</button>
+
+ 	</div>
+
+ 	</body>
+
+ </html>

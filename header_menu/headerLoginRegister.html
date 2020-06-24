@@ -1,0 +1,31 @@
+<header>
+	<div class="header">
+  			<a href="javascript:void(0);" id="registrationLink">Registrieren</a>
+	 		<a href="javascript:void(0);" id="loginLink">Anmelden</a>
+	 </div>
+
+	 <div id="loginDialog" class="modal">
+				<form id="formLogin" action="">
+					Nutzername: <input type="text" id="loginUsername" name="loginUsername" required><br><br>
+					Passwort: <input type="password" id="loginPassword" name="loginPassword" required><br>
+					<div class="buttonbarSubmitCancel">
+						<button type="button" id="cancelLogin">Abbrechen</button>
+						<button type="submit" id="submitLogin">OK</button>
+					</div>
+				</form>
+			</div>
+
+			<div id="registrationDialog" class="modal">
+				<form id="formRegistration" action="">
+					Vorname: <input type="text" id="firstName" name="firstName" required><br><br>
+					Nachname: <input type="text" id="lastName" name="lastName" required><br><br>
+					E-Mail-Adresse: <input type="email" id="email" name="email" required><br><br>
+					Passwort: <input type="password" id="registrationPassword" name="registrationPassword" required><br><br>
+					Passwort wiederholen: <input type="password" id="registrationPasswordRepeat" name="registrationPasswordRepeat" required><br>
+					<div class="buttonbarSubmitCancel">
+						<button type="button" id="cancelRegistration">Abbrechen</button>
+						<button type="submit" id="submitRegistration">OK</button>
+					</div>
+				</form>
+			</div>
+</header>

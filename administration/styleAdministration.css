@@ -1,0 +1,32 @@
+#tableUsers {
+	border: 1px solid grey;
+	border-collapse: collapse;
+	margin: 20px auto 20px auto;
+	width: 50%;
+}
+
+#tableUsers th, td {
+    padding: 10px;
+    border: 1px solid grey;
+}
+
+#tableUsers tr:nth-child(even) {background-color: #E4E4E9;}
+#tableUsers tr:nth-child(odd) {background-color: #efeff6;}
+
+
+#tableUsers td:first-child {  
+  text-align: center;
+}
+
+#tableUsers select {
+	width: 100%;
+}
+
+#submitAdministration {
+	margin: 10px auto 10px auto;
+}
+
+.centered {
+	width: 100%;
+	text-align: center;
+}

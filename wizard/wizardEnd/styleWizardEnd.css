@@ -1,0 +1,50 @@
+#tableResult {
+  width: 98%;
+  padding: 1em; 
+  margin: 1em;
+  border: 1px grey solid;
+  border-collapse: collapse;
+}
+
+#tableResult th {
+  border: 1px grey solid;
+  padding: 0.5em;
+  background: rgb(242, 238, 238, 0.8);
+}
+
+#tableResult td {
+  border: 1px grey solid;
+  width: 50%;
+  padding: 0.5em;
+  background: rgb(242, 238, 238, 0.4);
+}
+
+#buttonbar {
+  margin: 2em;
+  text-align: center;
+}
+
+#buttonbar button {
+  margin: 1em;
+}
+
+.hidden-source{
+  display: none;
+}
+
+#formDocx {
+    display: inline-block;
+}
+#formXML {
+    display: inline-block;
+} 
+
+
+
+
+
+
+
+
+
+

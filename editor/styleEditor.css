@@ -1,0 +1,586 @@
+html, body { height:100%; margin:0; padding:0; font-size: 1em; font-family: "Arial", "Helvetica"; background-color: rgb(201, 222, 242);}
+input, select, textarea, button { font-family:inherit; font-size: inherit;}
+
+button {
+    background-color: rgb(243, 243, 238);
+}
+
+/* Style the tab */
+.tab {
+    overflow: hidden;
+    background-color: rgb(201, 222, 242);
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+    background-color: rgb(199, 211, 243);
+    float: left;
+    border: solid 1px grey;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+    background-color: rgb(170, 202, 245);
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+    background-color: rgb(201, 222, 242);
+    border-bottom: none;
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 20px;
+    border: none;
+    padding-bottom: 55px;
+}
+
+h3 {
+    display: inline-block;
+}
+
+.divInline {
+    display: block;
+}
+
+.textareaTabQuestion {
+    width: 100%;
+    height: 6em;
+    resize: none;
+}
+
+.textinputTabQuestion {
+    width: 92%;
+}
+
+fieldset {
+    border: 0;
+}
+
+input[type="radio"] {
+    margin-left: 30px;
+}
+
+.buttonbarSubmitCancel {
+    float: right;
+    margin: 1em;
+    bottom: 0;
+    right: 0;
+}
+
+.buttonbarSubmitCancel button {
+    width: 5.5em;
+    text-align: center;
+    padding: 0px;
+}
+
+.buttonbarConfirm {
+    float: right;
+    margin: 1em;
+    bottom: 0;
+    right: 0;
+}
+
+#cancelEditQuestion {
+    margin-right: 1em;
+}
+
+#cancelEditElement {
+    margin-right: 1em;
+}
+
+#divOperatorsCondition {
+    margin: 1em;
+    justify-content: center;
+}
+
+#selectOperandCondition {
+    width: 100%; 
+    height: 20em;
+    white-space: initial;
+}
+
+#divEditCondition {
+    width: 100%;
+    text-align: center;
+}
+
+#inputSearchCondition {
+    width: 50%;
+}
+
+#conditionSearch {
+    justify-content: center;
+}
+
+.textareaSubelement {
+    resize: none;
+    width: 98%;
+    height: 4em;
+}
+
+table td {
+    border: none;
+
+}
+
+#treeviewQuestions td {
+    vertical-align: top;
+}
+
+.selectedCell {
+    color: blue;
+}
+
+.selectableTd {
+    cursor: pointer;
+}
+
+.correspondingCell {
+    color: red;
+}
+
+/* warning cell */
+.level0 td:nth-child(1) {
+    width: 25px;
+}
+
+/* button cell */
+.level0 td:nth-child(2) {
+    width: 5em;
+}
+
+/* expand cell */
+.level0 td:nth-child(3) {
+    width: 1em;
+}
+
+/* number cell */
+.level0 td:nth-child(4){
+    width: 1em;
+}
+
+/* text cell */
+.level0 td:nth-child(5){
+}
+
+/* question/element id cell */
+.level0 td:nth-child(6) {
+    width: 5em;
+    padding-left: 2em;
+}
+
+/* answer/subelement id cell */
+.level1 td:nth-child(7) {
+    width: 5em;
+    padding-left: 2em;
+} 
+
+.collapse .toggle {
+    background: transparent url("../resources/collapse.svg") no-repeat center;
+    background-size: 20px 20px;
+}
+.expand .toggle {
+    background-size: 20px 20px !important;
+    background: transparent url("../resources/expand.svg") no-repeat center;
+}
+.toggle {
+    height: 20px;
+    width: 20px;
+    display: inline-block;   
+}
+
+.ui-dialog-titlebar {
+    background: rgb(201, 222, 242);
+    border: solid black 1px;
+    font-size: 110%;
+    text-align: center;
+}
+
+.ui-dialog .ui-dialog-content {
+    background: rgb(199, 211, 243);
+    border: solid black 1px;
+}
+
+.ui-dialog {
+    position: absolute; 
+    padding: 0em; 
+    overflow: hidden; 
+}
+
+
+.ui-dialog-titlebar-close { 
+    width: 30px !important; 
+    height: 30px !important; 
+    top: 40% !important;
+
+}
+
+.ui-dialog-titlebar-close:focus,
+.ui-dialog-titlebar-close:hover {
+    background: #E10000;
+}
+
+.modal {
+    display: none; 
+    overflow: auto;
+    z-index: 1; 
+    background-color: white; 
+} 
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    border: 1px solid #888;
+    width: 100%;
+    height: 100%;
+}  
+
+.selectOperandAfter {
+    background: lightgrey;
+}
+
+.tooltip {
+    display: inline-block;
+}
+
+.ui-tooltip {
+    white-space: pre-line;
+}
+
+#selectGroup {
+    width: 40em;
+}
+
+.selectionQuestion {
+    width: 100%;
+    overflow: auto;
+} 
+
+#divGrouping {
+    display: table; 
+    width:100%; 
+}
+
+#divAssignButtons {
+    display: table-cell;
+    width: 5%;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.divSelectionQuestions {
+    display: table-cell;
+    width: 40%;
+} 
+
+#tabGroup {
+    overflow: auto;
+}
+
+#inputGroupname {
+    width: 95%;
+}
+
+#tabElementgroup {
+    overflow: auto;
+}
+
+#selectElementGroup {
+    width: 40em;
+}
+
+.selectionElement {
+    width: 100%;
+    overflow: auto;
+}
+
+#divElementGrouping {
+    display: table;
+    width:100%; 
+}
+
+#divAssignElementsButtons {
+    display: table-cell;
+    width: 5%;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.divSelectionElements {
+    display: table-cell;
+    width: 40%;
+}
+
+#inputElementGroupname {
+    width: 95%;
+}
+
+.footer {
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    border-top: solid 1px grey;
+    width: 100%;
+    padding: 5px 0px 5px 0px;
+    background-color: rgb(199, 211, 243);
+
+} 
+
+#sendToServer {
+    padding: 5px;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.button {
+    margin: 5px;
+}
+
+#inputCommitmessage {
+    width: 98%;
+    height: 8em;
+    resize: none;
+}
+
+#tableVersions{
+    width: 100%;
+    border: 1px solid grey;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+#tableVersions table, th, td{
+    border: 1px solid grey;
+}
+
+#tableVersions th {
+    padding-bottom: 6px;
+    padding-top: 6px;
+}
+
+.versionsRow td {
+    border: 1px solid grey;
+    padding-bottom: 12px;
+    padding-top: 12px;
+}
+
+#tableVersions tr:nth-child(even){background-color: #f2f2f2;}
+#tableVersions tr:nth-child(odd){background-color: rgb(220, 217, 225);}
+
+.versionNumber {
+    width: 10%;
+}
+.versionRelease {
+    width: 15%;
+}
+
+.versionCommitter {
+    width: 15%;
+}
+
+.centeredContent {
+    text-align: center;
+    margin: 10px;
+}
+
+.centeredContent input {
+    margin: 10px;
+}
+
+#buttonNewAnswer {
+    margin-left: 8px;
+}
+
+#buttonNewSubelement {
+    margin-left: 8px;
+}
+
+#newQuestion {
+    margin-left: 25px;
+}
+
+#newElement {
+    margin-left: 25px;
+}
+
+.addButton {
+    size: 25px 25px;
+    padding: 12px;
+    background-size: 20px 20px !important; 
+    background: rgb(243, 243, 238) url("../resources/add.svg") no-repeat center;
+    margin-left: 3px;
+    margin-right: 3px;
+}
+
+.deleteButton {
+    size: 25px 25px;
+    padding: 12px;
+    background-size: 20px 20px !important; 
+    background: rgb(243, 243, 238) url("../resources/delete.svg") no-repeat center; 
+    margin-left: 3px;
+    margin-right: 3px;
+}
+
+.editButton {
+    size: 25px 25px;
+    padding: 12px;
+    background-size: 20px 20px !important;
+    background: rgb(243, 243, 238) url("../resources/edit.svg") no-repeat center; 
+    float: left;
+    margin-left: 3px;
+    margin-right: 3px;
+}
+
+.arrowRight {
+    size: 25px 25px;
+    padding: 12px;
+    background-size: 20px 20px !important;
+    background: rgb(243, 243, 238) url("../resources/arrow_right.svg") no-repeat center; 
+    margin: 5px;
+}
+
+.arrowLeft {
+    size: 25px 25px;
+    padding: 12px;
+    background-size: 20px 20px !important;
+    background: rgb(243, 243, 238) url("../resources/arrow_left.svg") no-repeat center; 
+    margin: 5px;
+}
+
+.renameButton {
+    size: 25px 25px;
+    padding: 12px;
+    background-size: 20px 20px !important;
+    background: rgb(243, 243, 238) url("../resources/rename.svg") no-repeat center;
+    margin-left: 3px;
+    margin-right: 3px;
+}
+
+.arrowDown {
+    size: 25px 25px;
+    padding: 12px;
+    background-size: 20px 20px !important;
+    background: rgb(243, 243, 238) url("../resources/arrow_down.svg") no-repeat center; 
+}
+
+.searchButton {
+    size: 25px 25px;
+    padding: 12px;
+    background-size: 20px 20px !important;
+    background: rgb(243, 243, 238) url("../resources/search.svg") no-repeat center; 
+    margin-left: 6px;
+    margin-right: 6px;
+}
+
+.warningCell {
+    size: 25px 25px;
+    background-size: 23px 23px !important;
+    background: transparent url("../resources/warning.svg") no-repeat center; 
+  /*  margin-left: 6px;
+    margin-right: 6px;*/
+}
+
+#divOperatorsCondition > button {
+    height: 25px;
+    margin-left: 6px;
+    margin-right: 6px;
+}
+
+.inputAnswer {
+    width: 98%;
+}
+
+.divContent {
+    border: solid 1px;
+    border-radius: 25px;
+    width: 100%;
+    border: 1px solid grey;
+    padding: 10px;
+    margin: 5px 0px 5px 10px;
+    background-color: rgb(201, 222, 242);
+}
+
+.divContent > * {
+    margin: 5px;
+}
+
+.infoIcon {
+    padding-bottom: 5px;
+    padding-right: 5px;
+}
+
+.hidden {
+    display: none;
+    margin-left: 10px;
+}
+
+.visible {
+    display: block;
+    margin-left: 10px;
+}
+
+.warningVisible {
+    visibility: visible;
+}
+
+.warningHidden {
+    visibility: hidden; 
+}
+
+.condContainer {
+    display: flex;
+    align-items: center;
+    margin: 5px;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    margin: 5px;
+}
+
+#questionLegend {
+    width: auto;
+    border: solid 1px grey;
+    padding: 10px;
+    margin: 0px 20px 20px 20px;
+    text-align: center;
+    display: inline-block;
+}
+
+#questionLegend span {
+    margin: 20px;
+}
+
+.highlighted {
+    color: red;
+}
+
+#timeoutDialog p, #timeoutDialog img {
+    padding: 15px;
+}
+
+#timeoutDialog img {
+    float: left;
+    height: 100px;
+    width:100px;
+}
+
+#idleCountdown {
+    font-weight: bold;
+    color: red;
+}
+
+
+
+
+
+
+
